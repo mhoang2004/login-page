@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Đăng kí tài khoản</h1>
+        <form action="get">
+            <table>
+                <tr>
+                    <td>Họ tên: </td>
+                    <td>
+                        <input type="text" id="HoTen" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tên đăng nhập: </td>
+                    <td>
+                        <input type="text" id="TenDangNhap" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại: </td>
+                    <td>
+                        <input type="number" id="SoDienThoai" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td>
+                        <input type="text" id="Email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu: </td>
+                    <td>
+                        <input type="password" id="PassWord" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Xác nhận mật khẩu: </td>
+                    <td>
+                        <input type="password" id="XacNhanMatKhau" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giới tính: </td>
+                    <td>
+                        <input type="radio" name="gioitinh" id="GioiTinh1" required> <label for="GioiTinh">Nam</label>
+                        <input type="radio" name="gioitinh" id="GioiTinh2" required> <label for="GioiTinh">Nữ</label>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <!-- <button id="DangKi" onclick="CheckThongTin()">Đăng ký</button> -->
+                        <input id="submit-btn" type="button" value="Đăng ký" onclick="CheckThongTin()">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <p><span style="background-color: rgb(124, 29, 233); color: white; padding: 5px;">Lưu ý:</span> Mật khẩu
+                phải
+                có độ dài lớn
+                hơn 8 và không chứa khoảng trắng!</p>
+            </p>
+        </form>
+    </main>
+
+    <script src="./main.js">
+
+    </script>
+</body>
+
+</html>
